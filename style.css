@@ -82,8 +82,6 @@ body {
     margin-right: 230px;
     display: flex;
     justify-content: space-between;
-
-
 }
 
 .for_women {
@@ -335,7 +333,6 @@ h4 {
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     border: none;
-
 }
 
 .footer {
@@ -368,8 +365,7 @@ h4 {
     display: flex;
     justify-content: left;
     align-items: center;
-    left: 1214.71px;
-
+    left: 124.71px;
 }
 
 .cube2 {
@@ -380,6 +376,4 @@ h4 {
     bottom: 0;
     right: 0;
     position: absolute;
-
-
 }
