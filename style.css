@@ -5,59 +5,97 @@
 
 body {
     font-family: sans-serif;
-    max-width: 1600px;
     margin: 0 auto;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1140px;
 }
 
 .header {
     background: #222222;
+
+
+}
+
+.menuheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 75px;
 }
 
-
-.menuleft {
+.menuleft_ul {
     list-style-type: none;
     display: flex;
-    justify-content: left;
-    padding-left: 231px;
+    justify-content: space-between;
     align-items: center;
+    width: 100px;
+}
+
+.menuright_ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+}
+
+
+.menu-box {
+    background: #FFFFFF;
+    width: 232px;
+}
+
+.menu-heading {
+    padding-top: 37px;
+    padding-bottom: 2px;
+    padding-left: 34px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.menu-heading1 {
     padding-top: 20px;
-}
-
-.menu {
-    background: #222222;
-}
-
-.menuleft li:nth-child(2) {
-    padding-left: 41px;
-}
-
-.menuleft li:nth-child(3) {
-    padding-left: 859px;
-}
-
-.menuleft li:nth-child(4) {
     padding-left: 33px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: #F16D7F;
+
 }
 
-.menuleft li:nth-child(5) {
-    padding-left: 33px;
+.menu-link {
+    display: block;
+    text-decoration: none;
+    padding-left: 54.5px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
 }
-
 
 .firstpage {
     background-color: #F1E4E6;
+
+}
+
+.man1 {
     display: flex;
     justify-content: left;
     position: relative;
+    margin-left: -231px;
 }
 
 .rectangle {
     background: #F16D7F;
     width: 12px;
     height: 92px;
-    margin-left: 63px;
     margin-top: 290px;
+
 }
 
 .h1 {
@@ -78,8 +116,6 @@ body {
 
 .catalog {
     margin-top: 65px;
-    margin-left: 230px;
-    margin-right: 230px;
     display: flex;
     justify-content: space-between;
 }
@@ -122,8 +158,6 @@ body {
 
 .accessories {
     margin-top: 30px;
-    margin-left: 224px;
-    margin-right: 236px;
 }
 
 .brown {
@@ -154,8 +188,6 @@ h2 {
 
 .Fetured_Items {
     margin-top: 48px;
-    margin-left: 230px;
-    margin-right: 230px;
     display: flex;
     justify-content: space-between;
     max-width: 1140px;
@@ -220,15 +252,16 @@ h3 {
     background-color: #ffffff;
 }
 
-.black {
-    margin-top: 95.5px;
-    height: 341px;
+.blackbackgraund {
     background: #222224;
+    margin-top: 95.5px;
+}
+
+.black {
+    height: 341px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-left: 230px;
-    padding-right: 230px;
 }
 
 .black1 {
@@ -256,14 +289,15 @@ h4 {
 
 .picture {
     position: relative;
+    margin-left: -231px;
 }
 
 .picture2 {
-    width: 100%;
-    height: 100%;
+    width: 1600px;
+    height: 99%;
     position: absolute;
     background: rgba(244, 244, 244, 0.7);
-    top: 0;
+    top: 0px;
 }
 
 .face {
@@ -334,13 +368,16 @@ h4 {
     border: none;
 }
 
-.footer {
+.footerbackgraund {
     margin-top: -4px;
     background: hsl(240, 3%, 14%);
-    padding-left: 235px;
+}
+
+.footer {
     padding-top: 30px;
     padding-bottom: 30px;
-    position: relative;
+    display: flex;
+    justify-content: space-between;
 }
 
 .rights {
@@ -354,25 +391,14 @@ h4 {
     height: 32px;
     background: #FFFFFF;
     margin-left: 7.29px;
-    position: relative;
-
+    display: flex;
+    align-items: center;
+    justify-content: center
 }
 
 .links {
-    position: absolute;
     list-style-type: none;
     display: flex;
-    justify-content: left;
+    justify-content: right;
     align-items: center;
-    left: 1214.71px;
-}
-
-.cube2 {
-    display: block;
-    margin: auto;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
 }
