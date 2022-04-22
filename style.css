@@ -15,37 +15,46 @@ body {
 
 .header {
     background: #222222;
-
-
 }
 
 .menuheader {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: 75px;
 }
 
 .menuleft_ul {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     width: 100px;
+    align-items: center;
 }
 
 .menuright_ul {
     list-style-type: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: end;
     align-items: center;
-    width: 200px;
 }
 
+.menu-list {
+    position: relative;
+    padding-left: 25px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
 
 .menu-box {
     background: #FFFFFF;
-    width: 232px;
+    top: 60px;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+}
+
+.menu-list:hover .menu-box {
+    display: flex;
 }
 
 .menu-heading {
@@ -72,10 +81,23 @@ body {
     display: block;
     text-decoration: none;
     padding-left: 54.5px;
+    padding-right: 73px;
     font-weight: 400;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 30px;
     color: #6F6E6E;
+}
+
+.menu-box:before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: -5px;
+    left: 10px;
+    transform: rotate(45deg);
 }
 
 .firstpage {
