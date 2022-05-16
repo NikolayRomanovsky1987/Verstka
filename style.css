@@ -14,7 +14,7 @@ body {
 }
 
 .header {
-  background: #222222;
+  background: black;
 }
 
 .menuheader {
@@ -24,6 +24,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .menuleft_ul {
@@ -61,10 +64,11 @@ body {
 
 .menu-lista {
   padding: 18px;
+  padding-top: 36px;
 }
 
-.menu-lista:hover {
-  color: #5D5D5D;
+.menu-link:hover {
+  color: #EF5B70;
 }
 
 .menu-box {
@@ -278,6 +282,8 @@ h2 {
 
 .item-link {
   text-decoration: none;
+  height: 100%;
+  top: 0px;
 }
 
 .item:hover .item-pic {

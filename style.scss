@@ -14,12 +14,13 @@ body {
 }
 
 .header {
-    background: #fff;
+    background: rgb(0, 0, 0);
 }
 
 .menuheader {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .menuleft_ul {
@@ -45,11 +46,13 @@ body {
 
 .menu-lista {
     padding: 18px;
+    padding-top: 36px;
 }
 
-.menu-lista:hover {
-    color: #5D5D5D;
+.menu-link:hover {
+    color: #EF5B70;
 }
+
 
 .menu-box {
     background: #FFFFFF;
@@ -245,6 +248,8 @@ h2 {
 
 .item-link {
     text-decoration: none;
+    height: 100%;
+    top: 0px;
 }
 
 .item:hover .item-pic {
