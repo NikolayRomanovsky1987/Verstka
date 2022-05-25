@@ -239,6 +239,7 @@ h2 {
     width: 360px;
 }
 
+
 .item {
     position: relative;
     background: #F8F8F8;
@@ -248,8 +249,11 @@ h2 {
 
 .item-link {
     text-decoration: none;
-    height: 100%;
-    top: 0px;
+    display: block;
+}
+
+.item-pic {
+    width: 100%;
 }
 
 .item:hover .item-pic {
@@ -260,14 +264,16 @@ h2 {
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
 }
 
+
 .add-box {
-    display: none;
     position: absolute;
+    display: none;
     top: 0;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 75%;
+    pointer-events: none;
 }
 
 .item:hover .add-box {
@@ -280,6 +286,7 @@ h2 {
     padding: 10px;
     border: 1px solid #fff;
     text-decoration: none;
+    pointer-events: all;
 }
 
 .add:hover {
@@ -303,6 +310,7 @@ h3 {
     line-height: 16px;
     color: #000000;
 }
+
 
 .text_Fetured_Items {
     font-weight: 300;
@@ -378,6 +386,8 @@ h4 {
 .picturebackgraund {
     background-image: url(IMG/Layer41.jpg);
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
     height: 448px;
 
@@ -519,6 +529,19 @@ h4 {
     color: #F16D7F;
 }
 
+.breadcrumb-item {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+    text-decoration: none;
+}
+
+.Active {
+    color: #F16D7F;
+}
+
 .products {
     display: flex;
     align-items: center;
@@ -601,7 +624,7 @@ h4 {
 .Products_add {
     display: flex;
     align-items: center;
-    padding: 14px 23px;
+    padding: 1px 40px;
     border: 1px solid #F26376;
     text-decoration: none;
 }
@@ -614,7 +637,7 @@ h4 {
     color: #F26376;
     font-weight: 400;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 30px;
     margin-left: 11px;
 }
 
