@@ -14,14 +14,14 @@
 </head>
 
 <body>
-    <div class="header">
+    <header class="header">
         <div class="container">
             <div class="menuheader">
 
                 <ul class="menuleft_ul">
-                    <li class="menu-list"><a class="menu-lista" href="Index.html"><img src="IMG/Logo.svg"
+                    <li class="menu-list menu-list1"><a class="menu-lista" href="Index.html"><img src="IMG/Logo.svg"
                                 alt="Logo"></a></li>
-                    <li class="menu-list"><a class="menu-lista" href="Index.html"><img src="IMG/Loop.png"
+                    <li class="menu-list menu-list1"><a class="menu-lista" href="Index.html"><img src="IMG/Loop.png"
                                 alt="Logo"></a></li>
                 </ul>
                 <ul class="menuright_ul">
@@ -49,14 +49,14 @@
                             <a class="menu-link" href="#">Bags</a>
                         </div>
                     </li>
-                    <li class="menu-list"><a class="menu-lista" href="Contacts.html"><img src="IMG/Contacts.png"
-                                alt="Contacts"></a></li>
-                    <li class="menu-list"><a class="menu-lista" href="Basket"><img src="IMG/Basket.png"
-                                alt="Bascket"></a></li>
+                    <li class="menu-list menu-list1"><a class="menu-lista" href="Registration.html"><img
+                                src="IMG/Contacts.png" alt="Contacts"></a></li>
+                    <li class="menu-list menu-list1"><a class="menu-lista" href="Cart.html"><img src="IMG/Basket.png"
+                                alt="cart"></a></li>
                 </ul>
             </div>
         </div>
-    </div>
+    </header>
 
 
 
@@ -66,7 +66,7 @@
                 <a class="breadpage_link" href="#">NEW ARRIVALS</a>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a class="breadcrumb-item" href="#">HOME</a></li>
+                        <li class="breadcrumb-item"><a class="breadcrumb-item" href="Index.html">HOME</a></li>
                         <li class="breadcrumb-item"><a class="breadcrumb-item" href="#">MEN</a></li>
                         <li class="breadcrumb-item Active" aria-current="page">NEW ARRIVALS</li>
                     </ol>
@@ -99,27 +99,45 @@
                 competencies rather than exceptional portals. </p>
             <p class="products_window_dollar">$561</p>
             <hr class="products_window_hr2">
-            <div class="choose">
-                <div class="choosebutton">
-                    <p class="choosebutton_text">CHOOSE COLOR</p>
-                    <img src="IMG/Choose.svg" alt="choose">
+            <form action="">
+                <div class="choose">
+                    <details class="choosebutton">
+                        <summary class="choosebutton_text">CHOOSE COLOR
+                            <img src="IMG/Choose.svg" alt="">
+                        </summary>
+                        <label for="W">
+                            <input type="radio" name="COLOR" id="W"> White</label>
+                        <label for="B">
+                            <input type="radio" name="COLOR" id="B"> Black</label>
+                        <label for="Bl">
+                            <input type="radio" name="COLOR" id="Bl"> Blue</label>
+                    </details>
+                    <details class="choosebutton">
+                        <summary class="choosebutton_text">CHOOSE SIZE
+                            <img src="IMG/Choose.svg" alt="">
+                        </summary>
+                        <label for="S">
+                            <input type="radio" name="SIZE" id="S"> S</label>
+                        <label for="M">
+                            <input type="radio" name="SIZE" id="M"> M</label>
+                        <label for="L">
+                            <input type="radio" name="SIZE" id="L"> L</label>
+                    </details>
+                    <details class="choosebutton">
+                        <summary class="choosebutton_text">QUANTITY
+                            <img src="IMG/Choose.svg" alt="">
+                        </summary>
+                        <input type="number" min="0">
+                    </details>
                 </div>
-                <div class="choosebutton">
-                    <p class="choosebutton_text">CHOOSE SIZE</p>
-                    <img src="IMG/Choose.svg" alt="choose">
-                </div>
-                <div class="choosebutton">
-                    <p class="choosebutton_text">QUANTITY</p>
-                    <img src="IMG/Choose.svg" alt="choose">
-                </div>
-            </div>
 
-            <div class="Products_add-box">
-                <a class="Products_add" href="#">
-                    <img src="IMG/Add-pink.svg" alt="cart">
-                    <p class="Products_add-text">Add to Cart</p>
-                </a>
-            </div>
+                <button class="Products_add-box">
+                    <a class="Products_add" href="#">
+                        <img src="IMG/Add-pink.svg" alt="cart">
+                        <p class="Products_add-text">Add to Cart</p>
+                    </a>
+                </button>
+            </form>
 
         </div>
     </div>
