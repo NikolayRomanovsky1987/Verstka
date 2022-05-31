@@ -140,18 +140,23 @@ p {
     margin-left: -231px;
 }
 
+
+.man1_rirht {
+    display: flex;
+    align-items: center;
+
+}
+
 .rectangle {
     background: #F16D7F;
     width: 12px;
     height: 92px;
-    margin-top: 290px;
-
 }
 
 .h1 {
     margin-left: 16px;
-    margin-top: 290px;
 }
+
 
 .boldtext {
     font-weight: 900;
@@ -167,25 +172,36 @@ p {
 .catalog {
     margin-top: 65px;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 1140px;
+    justify-content: space-around;
+    gap: 1%;
 }
 
 .for_women {
     position: relative;
+    width: 100%;
+}
+
+.for_women_pic {
+    width: 100%;
+}
+
+.accessories_pic {
+    width: 100%;
 }
 
 .for_men {
     position: relative;
+    width: 100%;
 }
 
 .for_kids {
     position: relative;
+    width: 100%;
 }
 
 .accessories {
     position: relative;
+    width: 100%;
 }
 
 .catalogtext {
@@ -241,7 +257,7 @@ h2 {
 .Fetured_Items {
     margin-top: 48px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     max-width: 1140px;
     flex-wrap: wrap;
 }
@@ -372,17 +388,18 @@ h3 {
 }
 
 .black {
-    height: 341px;
+
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
+    padding-top: 103px;
 }
 
 
 .black1 {
     width: 360px;
     text-align: center;
-    margin-top: 103px;
+    height: 238px;
     transition: all 5s;
 }
 
@@ -418,42 +435,49 @@ h4 {
 }
 
 .picture {
-    position: relative;
-    margin-left: -231px;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1140px;
+    flex-wrap: wrap;
 }
 
-.picture2 {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: rgba(244, 244, 244, 0.7);
-    top: 0px;
+.picture_left {
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+}
+
+.picture_right {
+    text-align: center;
 }
 
 .face {
+    display: block;
     width: 144px;
-    position: absolute;
-    top: 88.59px;
-    left: 325.71px;
+    margin: 0 auto;
 }
 
 .face1 {
     width: 359.45px;
-    position: absolute;
-    top: 223px;
-    left: 228.29px;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
     color: #222224;
+    display: block;
+    margin-top: 30px;
 }
 
 .face2 {
-    position: absolute;
+
     width: 557px;
-    top: 150px;
-    left: 811px;
     font-weight: 700;
     font-size: 24px;
     line-height: 167.2%;
@@ -462,22 +486,19 @@ h4 {
 }
 
 .face3 {
-    position: absolute;
+
     width: 557px;
-    top: 190px;
-    left: 811px;
     font-weight: 300;
     font-size: 18px;
     line-height: 167.2%;
     text-align: center;
     color: #222224;
+    margin-bottom: 32px;
 }
 
 .Inputtextarea {
-    position: absolute;
+
     height: 49px;
-    top: 243px;
-    left: 915px;
     background: #E1E1E1;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
@@ -487,11 +508,9 @@ h4 {
 }
 
 .Subscribe {
-    position: absolute;
+
     width: 100px;
     height: 49px;
-    top: 243px;
-    left: 1171px;
     background: #F16D7F;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
@@ -508,6 +527,7 @@ h4 {
     padding-bottom: 30px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .rights {
@@ -1039,4 +1059,57 @@ ul {
 
 ul {
     padding-left: 0;
+}
+
+@media(max-width:667px) {
+    .footer {
+        flex-flow: column-reverse;
+        align-items: center;
+    }
+
+    .rights {
+        margin-top: 40px;
+    }
+
+    .catalog {
+        flex-wrap: wrap;
+    }
+
+    .accessories {
+        height: 111px;
+
+    }
+
+    .accessories_pic {
+        height: 100%;
+    }
+
+    .man1_pic {
+        display: none;
+    }
+
+    .man1 {
+        height: 375px;
+        justify-content: center;
+        align-content: center;
+        padding-left: 40%;
+
+    }
+}
+
+@media(max-width: 1024px) {
+    .man1_pic {
+        width: 40%;
+        margin-left: 150px;
+    }
+
+    .boldtext {
+        font-size: 44px;
+        line-height: 53px;
+    }
+
+    .black {
+        flex-direction: column;
+        align-items: center;
+    }
 }
